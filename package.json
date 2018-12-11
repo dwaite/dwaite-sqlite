@@ -1,0 +1,64 @@
+{
+  "private": true,
+  "name": "sqlite",
+  "version": "2.9.2",
+  "description": "SQLite client for Node.js applications with SQL-based migrations API",
+  "repository": "kriasoft/node-sqlite",
+  "author": "Kriasoft <hello@kriasoft.com> (https://www.kriasoft.com)",
+  "contributors": [
+    "Konstantin Tarkus <hello@tarkus.me> (https://twitter.com/koistya)",
+    "Theo Gravity <theo@suteki.nu> (https://www.npmjs.com/~theo.gravity)"
+  ],
+  "keywords": [
+    "sqlite",
+    "db",
+    "database",
+    "sql",
+    "migrate",
+    "migration",
+    "migrations",
+    "migrator",
+    "seed",
+    "seeds",
+    "seeder",
+    "node",
+    "node5",
+    "babel",
+    "es6",
+    "async",
+    "promise",
+    "promises",
+    "api"
+  ],
+  "license": "MIT",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "dependencies": {
+    "sqlite3": "4.0.2"
+  },
+  "devDependencies": {
+    "@types/sqlite3": "^3.1.3",
+    "babel-cli": "^6.22.2",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-async-to-generator": "^6.22.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "chai": "^3.5.0",
+    "del": "^2.2.2",
+    "eslint": "^3.14.1",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "mocha": "^3.2.0",
+    "rollup": "^0.41.4",
+    "rollup-plugin-babel": "^2.7.1"
+  },
+  "optionalDependencies": {
+    "sql-template-strings": "^2.2.2"
+  },
+  "scripts": {
+    "lint": "tslint",
+    "test": "node tools/build && mocha",
+    "build": "tsc"
+  }
+}
