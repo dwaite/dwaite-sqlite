@@ -60,7 +60,7 @@
   "scripts": {
     "lint": "tslint",
     "test": "node tools/build && mocha",
-    "prepublishOnly": "tsc",
+    "prepare": "tsc",
     "build": "tsc"
   },
   "files": [
